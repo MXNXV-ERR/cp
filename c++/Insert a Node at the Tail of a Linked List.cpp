@@ -9,7 +9,7 @@ class SinglyLinkedListNode {
 
         SinglyLinkedListNode(int node_data) {
             this->data = node_data;
-            this->next = nullptr;
+            this->next = NULL;
         }
 };
 
@@ -18,7 +18,7 @@ class SinglyLinkedList {
         SinglyLinkedListNode *head;
 
         SinglyLinkedList() {
-            this->head = nullptr;
+            this->head = NULL;
         }
 
 };

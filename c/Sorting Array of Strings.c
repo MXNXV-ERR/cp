@@ -8,13 +8,30 @@ int lexicographic_sort(const char* a, const char* b) {
 int lexicographic_sort_reverse(const char* a, const char* b) {
      return strcmp(b,a);
 }
+int no_of_ditinct_char(const char *a){
+    int n = 0;
+    int count[128] = {0};
+    if (NULL == a){
+        return -1;
+    }
+    while(*a != '\0'){
+        if (!count[*a]){
+            count[*a]++;
+            n++;
+        }
+        a++;
+    }
+    return n;
+}
 
 int sort_by_number_of_distinct_characters(const char* a, const char* b) {
-    
+    int res=no_of_ditinct_char(a)-no_of_ditinct_char(b);
+    return res?res:lexicographic_sort(a,b);
 }
 
 int sort_by_length(const char* a, const char* b) {
-    
+    int res=strlen(a)-strlen(b);
+    return res?res:lexicographic_sort(a,b);
 }
 
 void string_sort(char** arr,const int len,int (*cmp_func)(const char* a, const char* b)){
@@ -39,7 +56,6 @@ int main()
 {
     int n;
     scanf("%d", &n);
-  
     char** arr;
 	arr = (char**)malloc(n * sizeof(char*));
   
