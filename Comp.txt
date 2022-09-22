@@ -1,0 +1,20 @@
+==============================================================
+A year is a leap year if the following conditions are satisfied: 
+
+The year is multiple of 400.
+The year is multiple of 4 and not multiple of 100.
+====================================================
+int(i * 10** i / 9)
+single loop triangle
+This gives 1 -> 1, 2->22 , 3->33
+===============================================
+linked list del node
+1.pos0
+2.others
+=====================================
+pointers (mark point arr)
+for(int i=0;i<n;i=i+2)
+	ans+=*(marks+i);
+alternate sum
+======================================================
+lexicographic mean how it is in dictionary
