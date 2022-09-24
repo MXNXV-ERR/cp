@@ -3,3 +3,11 @@ end="" as arg in print to get no space in output
 ==============================================
 ** is pow
 ==============================================
+to find excat number of times substing appeared use slice operator
+eg,ABCDCDCDCD finding CDC =====appeared 3 times
+ count=0
+    for i in range(len(string)):
+        if string[i:i+len(sub_string)]==sub_string:
+            count+=1
+=========================================================
+fill method on
