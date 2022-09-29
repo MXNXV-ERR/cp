@@ -77,3 +77,12 @@ int main()
     }
     cout<<sol;
 }
+=========================================================
+If the difference between the grades and the next multiple of 5 is less than 3, round grades up to the next multiple of 5.
+int rem=grade%5;
+        if(5-rem<3)
+            grade+=5-rem;
+=============================================================
+hmm
+unordered_set<type> asdfsdf; .find method
+unordered_map<key,value> asdfsadf; .count method
