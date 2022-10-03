@@ -18,7 +18,7 @@ long findMinDiff(vector<long>& arr)
 
     sort(arr.begin(), arr.end());
  
-    long diff = 999999999999999999;
+    long diff = 99999999;
  
     for (int i = 0; i < arr.size(); i++)
         if (arr[i + 1] - arr[i] < diff)
